@@ -17,10 +17,11 @@ class Instrument():
         return pd.read_pickle(utils.get_instrument_data_filename())
 
 
-    @classmethod 
+    @classmethod
+    def get_instruments_list(cls):
+        df = cls.get_intsrument_df()
+        return [Instrument(x)for x in df.to_dict(orient= 'records')]
 
 
 if __name__ == "__main__":
-    df = Instrument.get_intsrument_df()
-
-    print(df.to_dict(orient='record'))
+    print(Instrument.get_instruments_list())
