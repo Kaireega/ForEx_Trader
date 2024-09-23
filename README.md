@@ -1,2 +1,0 @@
-# ForEx_Trader
- 
