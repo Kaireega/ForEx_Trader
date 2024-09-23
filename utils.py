@@ -2,7 +2,7 @@ def get_his_data_filename(pair,grannularity):
     return f"his_data/{pair}_{grannularity}.pkl"
 
 def get_instrument_data_filename():
-    return "instrument.pkl"
+    return "instruments.pkl"
 
 
 if __name__ == "__main__":
