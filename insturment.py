@@ -23,7 +23,7 @@ class Instrument():
         return [Instrument(x)for x in df.to_dict(orient= 'records')]
     
     @classmethod
-    def get_intsruments_dict(cls):
+    def get_instruments_dict(cls):
         i_list =cls.get_instruments_list()
         i_keys = [x.name for x in i_list]
         return {k:v for (k,v)in zip(i_keys,i_list)}
